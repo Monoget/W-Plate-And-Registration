@@ -1039,6 +1039,7 @@ p {
     color: #0a0c19;
     padding-bottom: 30px; }
     .header-content-area-tow .header-content-tow .header-title span {
+      font-size: 55px;
       color: #1fe075; }
   @media (max-width: 767px) {
     .header-content-area-tow .header-content-tow .main-btn {
@@ -1913,7 +1914,7 @@ p {
     padding-bottom: 50px; } }
 
 .single-pricing {
-  background-color: #fff;
+  background-color: #f9f9ff;
   padding: 50px;
   padding-top: 20px; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1952,6 +1953,8 @@ p {
       .single-pricing .pricing-price p {
         font-size: 14px; } }
   .single-pricing.pricing-tow .pricing-price p {
+    font-size: 20px;
+    font-weight: bold;
     color: #1fe075; }
 
 /*===========================
