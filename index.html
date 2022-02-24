@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>SK Driving Plate And Registration</title>
+    <title>Plate And Registration Services</title>
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/fav2.png" type="image/png">
@@ -44,6 +44,8 @@
     <!--====== Style css ======-->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- SweetAlert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 
@@ -65,7 +67,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="Home">
                             <img src="assets/images/logo-3.png" alt="Logo">
                         </a> <!-- Logo -->
 
@@ -137,14 +139,16 @@
                 <div class="about-content">
                     <div class="section-title section-title-tow mt-45">
                         <h5 class="sub-title">WELCOME TO PLATE REGISTRATION</h5>
-                        <h2 class="title">3 Steps To A Success Product Business.</h2>
+                        <h2 class="title">We provide 4 types plate registration services.</h2>
                     </div> <!-- section -title -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse is an ultrices gravida. Risus commodo. <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp or incididunt ut labore.</p>
+                    <p>When a person buys a new car, the buyer needs to register the car in his name in order to drive it.<br> <br>The required paperwork needed to register a car are:</p>
                     <ul class="about-list">
-                        <li><i class="fa fa-check-circle"></i> Affordable pricing & billing Plans</li>
-                        <li><i class="fa fa-check-circle"></i> Built with amazing featues</li>
-                        <li><i class="fa fa-check-circle"></i> Easy to edit & User friendly design.</li>
-                        <li><i class="fa fa-check-circle"></i> Amazing framework with free plans</li>
+                        <li><i class="fa fa-check-circle"></i> Title of the car. ( Signed by both seller and buyer)</li>
+                        <li><i class="fa fa-check-circle"></i> Bill of sale. ( Only if the car is bought from Dealer)</li>
+                        <li><i class="fa fa-check-circle"></i> Valid Insurance</li>
+                        <li><i class="fa fa-check-circle"></i> Driving license</li>
+                        <li><i class="fa fa-check-circle"></i> MV-82 form</li>
+                        <li><i class="fa fa-check-circle"></i> DTF-802 form</li>
                     </ul>
                 </div> <!-- about content -->
             </div>
@@ -172,28 +176,32 @@
                     <a class="active" id="v-pills-application-tab" data-toggle="pill" href="#v-pills-application" role="tab" aria-controls="v-pills-application" aria-selected="true">
                         <div class="single-services">
                             <h4 class="services-title">New plate and Registration</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>When a person buys a new car, the buyer needs to register the car in his name in order to drive it.
+                                Failure to do so results in suspension of driving privileges and tickets.</p>
                         </div> <!-- single services -->
                     </a>
 
                     <a id="v-pills-web-tab" data-toggle="pill" href="#v-pills-web" role="tab" aria-controls="v-pills-web" aria-selected="false">
                         <div class="single-services">
                             <h4 class="services-title">Duplicate Plate</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Title of the car is needed in order to sell the car, if lost then it can be ordered from dmv.</p>
                         </div> <!-- single services -->
                     </a>
 
                     <a id="v-pills-uiux-tab" data-toggle="pill" href="#v-pills-uiux" role="tab" aria-controls="v-pills-uiux" aria-selected="false">
                         <div class="single-services">
                             <h4 class="services-title">Surrender Plate</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>After a car has been sold, the plates need to be surrendered to DMV or any Express service in order to get the receipt.
+                                This receipt is used to cancel the Insurance of the car.<br/>
+                                And the DMV also sends a check that includes the return registration money from dmv.
+                            </p>
                         </div> <!-- single services -->
                     </a>
 
                     <a id="v-pills-graphic-tab" data-toggle="pill" href="#v-pills-graphic" role="tab" aria-controls="v-pills-graphic" aria-selected="false">
                         <div class="single-services">
                             <h4 class="services-title">Registration Renewal</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p> Car registration is valid for 2 years, and every 2 years it needs to be renewed.</p>
                         </div> <!-- single services -->
                     </a>
                 </div> <!-- nav -->
@@ -258,8 +266,9 @@
                                         <p>New plate and Registration</p>
                                     </div>
                                     <div class="pricing-content mt-25">
-                                        <p class="mb-35">Power And Predictive Dialing Quality & Customer Experience 24/7 phone and email support</p>
-                                        <a class="main-btn main-btn-3" href="#">Set Appointment</a>
+                                        <p class="mb-35">If you need same day services fee $125. And please come
+                                            before 12 PM</p>
+                                        <a class="main-btn main-btn-3" href="#appointment">Set Appointment</a>
                                     </div>
                                 </div> <!-- single price -->
                             </div>
@@ -269,12 +278,13 @@
                                         <img src="assets/images/svg/priceing-1.svg" alt="pricing">
                                     </div>
                                     <div class="pricing-price mt-30">
-                                        <h2>$75</h2>
+                                        <h2>$55</h2>
                                         <p>Duplicate Plate</p>
                                     </div>
                                     <div class="pricing-content mt-25">
-                                        <p class="mb-35">Power And Predictive Dialing Quality & Customer Experience 24/7 phone and email support</p>
-                                        <a class="main-btn main-btn-3" href="#">Set Appointment</a>
+                                        <p class="mb-35">Receipt will get within 1 to 2 weeks.
+                                            If you pay $75 receipt will get within 2 to 3 days.</p>
+                                        <a class="main-btn main-btn-3" href="#appointment">Set Appointment</a>
                                     </div>
                                 </div> <!-- single price -->
                             </div>
@@ -284,12 +294,12 @@
                                         <img src="assets/images/svg/priceing-1.svg" alt="pricing">
                                     </div>
                                     <div class="pricing-price mt-30">
-                                        <h2>$75</h2>
+                                        <h2>$35</h2>
                                         <p>Surrender Plate</p>
                                     </div>
                                     <div class="pricing-content mt-25">
-                                        <p class="mb-35">Power And Predictive Dialing Quality & Customer Experience 24/7 phone and email support</p>
-                                        <a class="main-btn main-btn-3" href="#">Set Appointment</a>
+                                        <p class="mb-35">Receipt will get within 2 to 3 days.</p>
+                                        <a class="main-btn main-btn-3" href="#appointment">Set Appointment</a>
                                     </div>
                                 </div> <!-- single price -->
                             </div>
@@ -303,8 +313,8 @@
                                         <p>Registration Renewal</p>
                                     </div>
                                     <div class="pricing-content mt-25">
-                                        <p class="mb-35">Power And Predictive Dialing Quality & Customer Experience 24/7 phone and email support</p>
-                                        <a class="main-btn main-btn-3" href="#">Set Appointment</a>
+                                        <p class="mb-35">Receipt will get within 2 to 3 days.</p>
+                                        <a class="main-btn main-btn-3" href="#appointment">Set Appointment</a>
                                     </div>
                                 </div> <!-- single price -->
                             </div>
@@ -332,7 +342,7 @@
         </div> <!-- row -->
 
         <div class="contact-form contact-form-tow">
-            <form id="contact-form" action="https://preview.codeceil.com/item/bizto/bizto/assets/contact.php" method="post" data-toggle="validator">
+            <form id="contact-form" action="Appointment" method="post" data-toggle="validator">
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="single-contact-form form-group">
@@ -373,7 +383,7 @@
                     <p class="form-message"></p>
                     <div class="col-lg-12">
                         <div class="single-contact-form text-center">
-                            <button type="submit" class="main-btn main-btn-3">Set Appointment</button>
+                            <button type="submit" class="main-btn main-btn-3" name="submit">Set Appointment</button>
                         </div> <!-- single contact form -->
                     </div>
                 </div> <!-- row -->
@@ -392,10 +402,12 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-12 order-md-0 order-lg-0">
                     <div class="widget-about pt-50">
-                        <a href="index.html">
+                        <a href="Home">
                             <img src="assets/images/logo-4.png" alt="Logo">
                         </a>
-                        <p class="mt-25">Lorem ipsum dolor sit amet ctetur adipisicing elit. Tempore corrupti ga earum asperiores, alias excepturi sit. Impedit, fugit laudantium.</p>
+                        <p class="mt-25">Plate Registration, the place where you will register the car in his name in order to drive it.
+                            You bought from the personal seller, the price of the car must be at a reasonable market price.
+                        </p>
                     </div> <!-- widget about -->
                 </div>
                 <div class="col-lg-4 col-sm-6 order-md-1 order-lg-1">
@@ -418,7 +430,7 @@
                             <h4 class="title">Contact Us</h4>
                         </div>
                         <div class="widget-info">
-                            <p><span>Location:</span> 2750 Quadra Street Victoria, Canada</p>
+                            <p><span>Location:</span><br/>69-07 Roosevelt Ave 2nd floor, Woodside, New York 11377</p>
                             <p><span>Email:</span>info@induxtro.com</p>
                             <p><span>Phone:</span>+324-9442-515</p>
                             <ul class="social mt-30">
@@ -437,7 +449,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="copyright pt-15 text-center text-md-center">
-                        <p>BizTo © 2019 All Right Reserved</p>
+                        <p>Plate Registration © 2022 All Right Reserved</p>
                     </div> <!--  copyright -->
                 </div>
             </div> <!-- row -->
@@ -499,5 +511,33 @@
 <!--====== Main js ======-->
 <script src="assets/js/main.js"></script>
 
+<script>
+    let x = getCookie('alert');
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    console.log(x);
+    if(x==1){
+        Swal.fire({
+            title: 'Successful',
+            text: 'Request Successful',
+            imageUrl: 'https://plateregistration.com/assets/images/logo-3.png',
+            imageWidth: 400,
+            imageHeight: 100,
+            imageAlt: 'Custom image',
+        })
+        eraseCookie('alert');
+    }
+    function eraseCookie(name) {
+        document.cookie = name +'=;';
+    }
+</script>
 </body>
 </html>
